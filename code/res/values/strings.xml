@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">记账易</string>
+    <string name="income">收入</string>
+    <string name="spending">支出</string>
+    <string name="material_object">实物</string>
+    <string name="agriculture">农业</string>
+    <string name="more">更多</string>
+    <string name="today_sum">今天s%笔</string>
+    <string name="week_sum">本周s%笔</string>
+    <string name="month_sum">本月s%笔</string>
+    
+    <string name="mms">短信记</string>
+    <string name="tiaoma">条码记</string>
+    <string name="voice">语音记</string>
+    <string name="record">录音记</string>
+    <string name="changyong">常用记</string>
+
+    <string name="personal_income">个人收入和社保</string>
+    <string name="mortgage_costs">还房贷费用</string>
+    <string name="medical_expenses">医疗费用</string>
+    <string name="household_expenses">家庭支出</string>
+    <string name="other_income">其他收入</string>
+    <string name="communication_fee">通信费</string>
+    <string name="public_utility_fee">公共事业费</string>
+    <string name="monthly_note">每月附记</string>
+</resources>

@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.eric.account.view.ScrollLayout
+        android:id="@+id/nav_banner_body_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.eric.account.view.ScrollLayout>
+
+    <com.eric.account.view.PageIndicitorView
+        android:id="@+id/nav_banner_body_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/indicator_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        android:gravity="center" />
+
+</RelativeLayout>

@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/today_sum"
+            style="@style/sum_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/today_sum" />
+
+        <TextView
+            android:id="@+id/today_time"
+            style="@style/sum_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/today_sum"
+            android:text="2015-10-26"
+            android:layout_marginTop="15dip"
+            android:textColor="@color/grey" />
+
+        <TextView
+            android:id="@+id/today_spending"
+            style="@style/sum_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="0.00"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:id="@+id/today_income"
+            style="@style/sum_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dip"
+            android:layout_below="@id/today_spending"
+            android:text="0.00"
+            android:textColor="@color/green" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <View
+            android:id="@+id/placeholder"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/placeholder"
+            android:padding="10dip" >
+
+            <TextView
+                android:id="@+id/week_sum"
+                style="@style/sum_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/week_sum" />
+
+            <TextView
+                android:id="@+id/week_spending"
+                style="@style/sum_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="0.00"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/week_income"
+                style="@style/sum_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/week_spending"
+                android:text="0.00"
+                android:paddingTop="15dip"
+                android:textColor="@color/green" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/placeholder"
+            android:padding="10dip" >
+
+            <TextView
+                android:id="@+id/month_sum"
+                style="@style/sum_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/month_sum" />
+
+            <TextView
+                android:id="@+id/month_spending"
+                style="@style/sum_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="0.00"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/month_income"
+                style="@style/sum_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/month_spending"
+                android:paddingTop="15dip"
+                android:text="0.00"
+                android:textColor="@color/green" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

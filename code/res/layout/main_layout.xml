@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white"
+        android:gravity="center" >
+
+        <TextView
+            style="@style/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/footer_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:background="@android:color/white" >
+
+        <include layout="@layout/footer_layout" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/title" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/nav_banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nav_banner_height"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:background="@android:color/white" >
+
+                <include layout="@layout/nav_banner_layout" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nav_body"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nav_banner_body_height"
+                android:layout_below="@id/nav_banner"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:background="@android:color/white" >
+
+                <include layout="@layout/nav_banner_body_layout" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/account_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/nav_body"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:background="@android:color/white" >
+
+                <include layout="@layout/account_detail_layout" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

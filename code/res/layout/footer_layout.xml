@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/footer_pre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/pre" />
+
+    <ImageView
+        android:id="@+id/footer_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/next" />
+
+    <HorizontalScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/footer_next"
+        android:layout_toRightOf="@id/footer_pre" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/footer_income"
+                style="@style/footer_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dip"
+                android:drawableTop="@drawable/income"
+                android:text="@string/income" />
+
+            <TextView
+                android:id="@+id/footer_spending"
+                style="@style/footer_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dip"
+                android:drawableTop="@drawable/spending"
+                android:text="@string/spending" />
+
+            <TextView
+                android:id="@+id/footer_material_object"
+                style="@style/footer_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dip"
+                android:drawableTop="@drawable/material_object"
+                android:text="@string/material_object" />
+
+            <TextView
+                android:id="@+id/footer_agriculture"
+                style="@style/footer_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dip"
+                android:drawableTop="@drawable/agriculture"
+                android:text="@string/agriculture" />
+
+            <TextView
+                android:id="@+id/footer_more"
+                style="@style/footer_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dip"
+                android:layout_marginRight="30dip"
+                android:drawableTop="@drawable/more"
+                android:text="@string/more" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>
